@@ -1,0 +1,77 @@
+body, div, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+#tela {
+    width: 100vw;
+    height: 100vh;
+    background-color: #def8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#centro {
+    width: 80%;
+    height: 80%;
+    display: flex;
+}
+
+#esquerda {
+    width: 50%;
+    height: 100%;
+}
+
+#direita {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cima {
+    height: 14%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#baixo {
+    height: 86%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#campo_preenchimento {
+    width: 80%;
+    height: 95%;
+    background-color: white;
+    border-radius: 2.5vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#caixa_nome {
+    background-color: white;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 0.8vw;
+    padding-top: 0.8vw;
+    font-size: 0.7vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fb0071;
+    border-radius: 3vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#labubu {
+    height: 100%;
+    width: 60%;
+}
+
+.img_labubu {
+    position: fixed;
+    width: 24vw;
+}
