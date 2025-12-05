@@ -13,7 +13,6 @@ main {
 .img-left {
     width: 50%;
     height: 100%;
-    background-color: bisque;
 }
 
 .side-right{
@@ -132,13 +131,13 @@ main {
     }
 }
 
+/* ------------Conteúdo login--------------  */
 
 .login-content {
     width: 80%;
     height: 70%;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
 }
 
 .ipt_login {
@@ -166,4 +165,11 @@ label {
     font-weight: 600;
     font-size: larger;
     color: white;
+    margin-top: 15%;
+}
+
+.img-login{
+    width: 90%;
+    margin-left: -15%;
+    margin-bottom: -10%;
 }
