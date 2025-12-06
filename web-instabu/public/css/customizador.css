@@ -45,14 +45,6 @@ body, div, h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
-#campo_preenchimento {
-    width: 80%;
-    height: 95%;
-    background-color: white;
-    border-radius: 2.5vw;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
 #caixa_nome {
     background-color: white;
     padding-left: 3vw;
@@ -60,10 +52,29 @@ body, div, h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0.8vw;
     padding-top: 0.8vw;
     font-size: 0.7vw;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #fb0071;
     border-radius: 3vw;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#campo_preenchimento {
+    width: 80%;
+    height: 95%;
+    background-color: white;
+    border-radius: 2.5vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#centro_campo_preenchimento {
+    width: 85%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #labubu {
@@ -72,6 +83,80 @@ body, div, h1, h2, h3, h4, h5, h6 {
 }
 
 .img_labubu {
-    position: fixed;
+    position: absolute;
     width: 24vw;
+}
+
+#titulo_campo_preenchimento {
+    font-family: "Poppins", sans-serif;
+    color: #fb0071;
+    font-size: 1.8vw;
+}
+
+.div_roupas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+#cores {
+    display: flex;
+    justify-content: space-around;
+}
+
+#div_bt {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.desc_elemento {
+    font-size: 1.3vw;
+    font-family: "Poppins", sans-serif;
+    color: #737373;
+}
+
+.cor {
+    width: 4.3vw;
+    height: 4.3vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.caixa_roupa {
+    width: 5.5vw;
+    height: 5.5vw;
+    border: 0.25vw solid #d2d2d2;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.elementos_roupas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon_roupa {
+    width: 100%;
+}
+
+#btt_salvar {
+    background-color: #fb0071;
+    padding-left: 2.8vw;
+    padding-right: 2.8vw;
+    padding-bottom: 0.6vw;
+    padding-top: 0.6vw;
+    font-size: 1.5vw;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border-radius: 3vw;
+    border: 0.25vw solid #fb0071;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.3s ease;
+}
+
+#btt_salvar:hover {
+    background-color: white;
+    border: 0.25vw solid #fb0071;
+    color: #fb0071;
 }
