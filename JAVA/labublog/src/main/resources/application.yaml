@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: labublog
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/mercado?useSSL=false&serverTimezone=UTC
+    username: root
+    password: Urubu100#
+    driver-class-name: com.mysql.cj.jdbc.Driver

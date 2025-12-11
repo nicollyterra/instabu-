@@ -16,8 +16,9 @@
                 </div>
                 <div id="baixo">
                     <div id="labubu">
-                        <img src="assets_trocador/paper/4.png" class="img_labubu">
-                        <img src="assets_trocador/paper/6.png" class="img_labubu">
+                        <img id="img_cor" src="assets_trocador/paper/4.png" class="img_labubu">
+                        <img id="img_chapeu" src="assets_trocador/paper/0.png" class="img_labubu">
+                        <img id="img_camisa" src="assets_trocador/paper/0.png" class="img_labubu">
                     </div>
                 </div>
             </div>
@@ -28,52 +29,26 @@
                         <div class="div_roupas">
                             <h1 class="desc_elemento">Cor:</h1>
                             <div id="cores">
-                                <div style="background-color: #e65697;" class="cor"></div>
-                                <div style="background-color: #058bcd;" class="cor"></div>
-                                <div style="background-color: #7b5c52;" class="cor"></div>
-                                <div style="background-color: #dddd6f;" class="cor"></div>
+                                <div onclick="trocarCor(4)" style="background-color: #e65697;" class="cor"></div>
+                                <div onclick="trocarCor(2)" style="background-color: #058bcd;" class="cor"></div>
+                                <div onclick="trocarCor(3)" style="background-color: #7b5c52;" class="cor"></div>
+                                <div onclick="trocarCor(1)" style="background-color: #dddd6f;" class="cor"></div>
                             </div>
                         </div>
                         <div class="div_roupas">
                             <h1 class="desc_elemento">Cabeça:</h1>
-                            <div class="elementos_roupas">
-                                <div class="caixa_roupa">
-                                    <img class="icon_roupa" src="assets_trocador/icones/5.png">
-                                </div>
-                                <div class="caixa_roupa">
-                                    <img class="icon_roupa" src="assets_trocador/icones/6.png">
-                                </div>
-                                <div class="caixa_roupa">
-                                    <img class="icon_roupa" src="assets_trocador/icones/7.png">
-                                </div>
-                                <div class="caixa_roupa">
-                                    <img class="icon_roupa" src="assets_trocador/icones/8.png">
-                                </div>
-                            </div>
+                            <div class="elementos_roupas" id="elementos_chapeus"></div>
                         </div>
                         <div class="div_roupas">
                             <h1 class="desc_elemento">Corpo:</h1>
                             <div id="linha_div_elementos_roupas">
-                                <h2 class="seta"><</h2>
-                                <div class="elementos_roupas">
-                                    <div class="caixa_roupa">
-                                        <img class="icon_roupa" src="assets_trocador/icones/9.png">
-                                    </div>
-                                    <div class="caixa_roupa">
-                                        <img class="icon_roupa" src="assets_trocador/icones/10.png">
-                                    </div>
-                                    <div class="caixa_roupa">
-                                        <img class="icon_roupa" src="assets_trocador/icones/11.png">
-                                    </div>
-                                    <div class="caixa_roupa">
-                                        <img class="icon_roupa" src="assets_trocador/icones/12.png">
-                                    </div>
-                                </div>
-                                <h2 class="seta">></h2>
+                                <h2 class="seta" onclick="esquerdaCamisas()"><</h2>
+                                <div class="elementos_roupas" id="elementos_camisas"></div>
+                                <h2 class="seta" onclick="direitaCamisas()">></h2>
                             </div>
                         </div>
                         <div id="div_bt">
-                            <button id="btt_salvar">SALVAR</button>
+                            <button onclick="testarJAVA()" id="btt_salvar">SALVAR</button>
                         </div>
                     </div>
                 </div>
@@ -83,3 +58,5 @@
 
 </body>
 </html>
+
+<script src="js/customizador.js"></script>
